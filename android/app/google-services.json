@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "202908944050",
+    "project_id": "ibaco-c4fae",
+    "storage_bucket": "ibaco-c4fae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202908944050:android:11f18d47f5752ce2be6bab",
+        "android_client_info": {
+          "package_name": "com.ibaco_mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202908944050-t0nu35ltrbeqbaon7tsvm3aolr4ops8a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibaco_mobileapp",
+            "certificate_hash": "fd989c8a4fdfa46a4c71ff94a26c46ae10c27626"
+          }
+        },
+        {
+          "client_id": "202908944050-c0io6qamb12u5qhedbbhlc716sf98tl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK_ZpAHk1ONq5fX5VghNqFTT9Z3zvr1KE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202908944050-c0io6qamb12u5qhedbbhlc716sf98tl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

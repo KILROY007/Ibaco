@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+        <item name="colorPrimary">#ec2f23</item>
+    </style>
+    <style name="AppThemesplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+   <item name="colorPrimaryDark">#222222</item>
+   <item name="colorPrimary">#ec2f23</item>
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+         <item name="android:statusBarColor">#222222</item>
+    </style>
+</resources>

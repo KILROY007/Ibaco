@@ -1,0 +1,31 @@
+rootProject.name = 'ibaco_mobileapp'
+include ':react-native-webview'
+project(':react-native-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview/android')
+include ':react-native-sms-retriever'
+project(':react-native-sms-retriever').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sms-retriever/android')
+include ':react-native-razorpay'
+project(':react-native-razorpay').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-razorpay/android')
+include ':react-native-razorpay'
+project(':react-native-razorpay').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-razorpay/android')
+include ':react-native-razorpay'
+project(':react-native-razorpay').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-razorpay/android')
+include ':react-native-razorpay'
+project(':react-native-razorpay').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-razorpay/android')
+include ':react-native-google-signin', ':app'
+project(':react-native-google-signin').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-google-signin/google-signin/android')
+include ':@react-native-firebase_analytics'
+project(':@react-native-firebase_analytics').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/analytics/android')
+include ':@react-native-community_geolocation'
+project(':@react-native-community_geolocation').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/geolocation/android')
+include ':react-native-geocoder'
+project(':react-native-geocoder').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-geocoder/android')
+include ':react-native-version-check'
+project(':react-native-version-check').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-version-check/android')
+include ':react-native-linear-gradient'
+project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
+include ':@react-native-community_async-storage'
+project(':@react-native-community_async-storage').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/async-storage/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':react-native-push-notification'
+project(':react-native-push-notification').projectDir = file('../node_modules/react-native-push-notification/android')
+include ':app'
