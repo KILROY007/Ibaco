@@ -519,7 +519,7 @@ export class CheckoutPaymentComponent extends ComponentBase<
                                 
                             </View>
                             <Card style={styles.paymentCard}>
-                                <View style={{ marginLeft: 20, marginTop: 10 }}>
+                                {/* <View style={{ marginLeft: 20, marginTop: 10 }}>
                                     <Text style={styles.paymentText}>{Strings.text_payment}</Text>
                                    
                                     <View style={{ marginTop: 28 }}>
@@ -556,7 +556,7 @@ export class CheckoutPaymentComponent extends ComponentBase<
                                             Available Balance: ₹{this.state.walletBalance}
                                         </Text>
                                     </View>
-                                </View>
+                                </View> */}
                                 <View style={{ marginLeft: 12, marginTop: 15 }}>
                                     <Text style={styles.paymentMode}>
                                         {Strings.text_selet_payment_mode}

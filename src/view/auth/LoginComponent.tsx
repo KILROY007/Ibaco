@@ -25,8 +25,9 @@ import {
   Tab,
   Card,
 } from 'native-base';
+import auth from '@react-native-firebase/auth';
 import {DependencyInjector} from '../../dependency-injector/DependencyInjector';
-import {GoogleSignin} from '@react-native-google-signin/google-signin';;
+import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import {LoginViewModel, LoginState} from '../../view-madel/LoginViewModel';
 import ImageAssets from '../../assets';
 import {TextField} from '../components/react-native-material-textfield';
@@ -316,6 +317,16 @@ export class LoginComponent extends ComponentBase<any, LoginState> {
   resetAllTextFieldsForLogin = async () => {
     this.phoneNoForLoginTextInput.clear();
   };
+  // signIn = async () => {
+  //   const {idToken} = await GoogleSignin.signIn();
+
+  //   // Create a Google credential with the token
+  //   const googleCredential = await auth.GoogleAuthProvider.credential(idToken);
+
+  //   // Sign-in the user with the credential
+  //   const res = await auth().signInWithCredential(googleCredential);
+  //   console.log(res);
+  // };
   signIn = () => {
     GoogleSignin.signOut();
     GoogleSignin.signIn()
@@ -342,8 +353,8 @@ export class LoginComponent extends ComponentBase<any, LoginState> {
           } else {
             this.viewModel.set('oldGoogleUser', true);
             const res = await this.viewModel.createUserFromGoogle();
-            if  (res) {
-              this.viewModel.set('onLogInSuccess',true);
+            if (res) {
+              this.viewModel.set('onLogInSuccess', true);
             }
           }
           const dataToken = {id_token: data.idToken};
@@ -362,7 +373,7 @@ export class LoginComponent extends ComponentBase<any, LoginState> {
   private handleGoogleLogin = async () => {
     const response = await this.viewModel.validateGoogleUser();
     if (response) {
-      this.viewModel.set('onLogInSuccess',true);
+      this.viewModel.set('onLogInSuccess', true);
     }
   };
   public setCartGuestUsersCartDetails = async () => {
@@ -512,7 +523,7 @@ export class LoginComponent extends ComponentBase<any, LoginState> {
                             </Text>
                           </TouchableOpacity>
 
-                        {!this.state.newGoogleUser &&
+                          {!this.state.newGoogleUser && (
                             <TouchableOpacity
                               style={{
                                 height: 50,
@@ -538,7 +549,7 @@ export class LoginComponent extends ComponentBase<any, LoginState> {
                                 {Strings.button_signUp}
                               </Text>
                             </TouchableOpacity>
-                          }
+                          )}
                         </View>
                         {/*******************NEW GOOGLE USER TEXTFIELD **********************/}
                         {this.state.newGoogleUser && (
@@ -573,9 +584,8 @@ export class LoginComponent extends ComponentBase<any, LoginState> {
                                     autoCapitalize="none"
                                     onChangeText={value => {
                                       let valueIs = value.replace(/\s/g, '');
-                                      this.handleGoogleLoginForm(valueIs);;
-
-                                 }}
+                                      this.handleGoogleLoginForm(valueIs);
+                                    }}
                                     maxLength={10}
                                     value={this.state.googleForm.phone_number}
                                     returnKeyType="next"
@@ -796,7 +806,7 @@ export class LoginComponent extends ComponentBase<any, LoginState> {
 
                         {this.state.showAllTextField &&
                           this.state.isSignin &&
-                          !this.state.newGoogleUser  && (
+                          !this.state.newGoogleUser && (
                             <View
                               style={{marginTop: viewportWidth < 420 ? 10 : 9}}>
                               <View style={styles.phoneText}>
@@ -889,7 +899,7 @@ export class LoginComponent extends ComponentBase<any, LoginState> {
                               )}
                               {!this.state.isLogin &&
                                 this.state.isSignin &&
-                                !this.state.newGoogleUser  && (
+                                !this.state.newGoogleUser && (
                                   <View>
                                     {!this.state.isSignUpSuccess && (
                                       <View>
@@ -1048,7 +1058,7 @@ export class LoginComponent extends ComponentBase<any, LoginState> {
                         {/* //OTP BUTTON */}
 
                         {this.state.clickOTPButton != true &&
-                          !this.state.newGoogleUser  &&
+                          !this.state.newGoogleUser &&
                           !this.state.editNumber &&
                           this.state.isSignin && (
                             <View

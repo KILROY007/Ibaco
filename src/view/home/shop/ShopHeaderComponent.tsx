@@ -615,7 +615,7 @@ export class ShopHeaderComponent extends ComponentBase<any, ShopHeaderState> {
                               }
                             </View>
                           </TouchableOpacity>
-                          <TouchableOpacity
+                          {/* <TouchableOpacity
                             onPress={() => {
                               this.viewModel.set('isDelivery', false);
                               this.viewModel.set(
@@ -638,7 +638,7 @@ export class ShopHeaderComponent extends ComponentBase<any, ShopHeaderState> {
                               <Image source={ImageAssets.underline} style={{alignSelf:"center"}}/>
                               }
                             </View>
-                            </TouchableOpacity>
+                            </TouchableOpacity> */}
                             </Item>
                             <Text style={styles.modalSubtext}>
                             {this.state.isDelivery?

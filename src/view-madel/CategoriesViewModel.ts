@@ -245,7 +245,6 @@ export class CategoriesViewModel extends BaseViewModel {
         });
       }
       const bannerImages = [
-        ImageAssets.banner,
         ImageAssets.ibaco_carousel,
         ImageAssets.ibaco_carousel2,
       ];

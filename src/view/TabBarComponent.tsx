@@ -148,7 +148,7 @@ export class TabBarComponent extends ComponentBase<any, UserState> {
             ),
           })}
         />
-        <Tab.Screen
+        {/* <Tab.Screen
           name="Wallet"
           // component={() => <WalletComponent {...this.props} walletBalance={this.state.walletBalance} />}
           options={({ navigation, route }) => ({
@@ -180,7 +180,7 @@ export class TabBarComponent extends ComponentBase<any, UserState> {
           })}
         >
           {(props) => <WalletComponent {...props} walletBalance={this.state.walletBalance} />}
-        </Tab.Screen>
+        </Tab.Screen> */}
         {/* <Tab.Screen
             name="Favourite"
             component={FavouriteComponent}

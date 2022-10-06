@@ -145,7 +145,7 @@ export class CheckoutAddressComponent extends ComponentBase<
                       </Text>
                     </View>
                   </TouchableOpacity>
-                  <TouchableOpacity
+                  {/* <TouchableOpacity
                     style={{ marginTop: 20, marginLeft: 24 }}
                     onPress={() => {
                       this.viewModel.set(
@@ -177,7 +177,7 @@ export class CheckoutAddressComponent extends ComponentBase<
                         {Strings.button_pickUp}
                       </Text>
                     </View>
-                  </TouchableOpacity>
+                  </TouchableOpacity> */}
                 </View>
               </View>
               {this.state.deliveryMode === DeleveryAddressTypeEnum.PICKUP ? <Text style={[styles.readioText, { color: Colors.text_dark, textAlign: 'center', marginTop: 15 }]}>

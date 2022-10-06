@@ -36,7 +36,7 @@ const ImageAssets = {
 
   egg_active: require('./icons/tab_inactive.svg'),
   red_arrow_icon_common: require('./icons/common_icons/red_arrow_icon_common.png'),
-  banner: require('./icons/common_icons/bannerImage.jpg'),
+  banner: require('./icons/common_icons/ibaco_carousel.jpg'),
 
   // Account
   account_bottom_tab_inactive: require('./icons/account/account_bottom_tab_inactive.png'),
@@ -94,7 +94,7 @@ const ImageAssets = {
   pincode_location: require('./icons/shop/location.png'),
   scroll_arrow: require('./icons/shop/scroll_arrow.png'),
   shop_header: require('./icons/shop/shop_head.jpg'),
-  store_img: require('./icons/shop/store.png'),
+  store_img: require('./icons/shop/Ibaco_logo.jpg'),
   list_active: require('./icons/shop/list_act.png'),
   list_inactive: require('./icons/shop/list-inact.png'),
   grid_active: require('./icons/shop/grid_act.png'),
